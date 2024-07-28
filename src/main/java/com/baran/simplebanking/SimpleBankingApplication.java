@@ -3,11 +3,11 @@ package com.baran.simplebanking;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class SimplebankingApplication {
+@SpringBootApplication(scanBasePackages = "com.baran")
+public class SimpleBankingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SimplebankingApplication.class, args);
+        SpringApplication.run(SimpleBankingApplication.class, args);
     }
 
 }
