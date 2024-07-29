@@ -34,10 +34,8 @@ public class BankAccount {
 
     @PrePersist
     protected void onCreate() {
-        if (this.accountNumber == null) {
-            this.accountNumber = UUID.randomUUID().toString();
-            createDate = Instant.now();
-        }
+        this.accountNumber = UUID.randomUUID().toString();
+        createDate = Instant.now();
     }
 
     public void credit(double amount) {
